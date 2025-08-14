@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Techie.ay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="logo"><h3>Techie.ay</h3></div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="navlinks">
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="blog.html">Blog</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="challenges.html">Coding Challenges</a>
+        </div>
+    </nav>
+
+    <section class="resource-page">
+        <!-- Dark/Light Mode Toggle -->
+        <div class="theme-toggle">
+            <button id="toggle-theme">🌙 Dark Mode</button>
+        </div>
+    
+        <!-- Search & Filter Section -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for resources...">
+            <button id="search-btn" onclick="handleSearch()">🔍</button>
+        </div>
+    
+        <!-- Resource Categories -->
+        <div class="categories">
+            <button class="category-btn active" data-category="all">🔍 All</button>
+            <button class="category-btn" data-category="web-dev">🌐 Web Development</button>
+            <button class="category-btn" data-category="ai">🤖 AI & ML</button>
+            <button class="category-btn" data-category="cybersecurity">🔒 Cybersecurity</button>
+            <button class="category-btn" data-category="cloud">☁️ Cloud & DevOps</button>
+            <button class="category-btn" data-category="blockchain">🔗 Blockchain</button>
+        </div>
+    
+        <!-- Resource List -->
+        <div class="resource-list">
+            <div class="resource-card" data-category="web-dev" data-resource-id="8">
+                <a href="resource-tem.html" target="_blank"><h3>CSS Flexbox & Grid Cheatsheets</h3></a>
+                <p>Essential visual guides and cheatsheets for mastering CSS Flexbox and Grid layouts.</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="ai" data-resource-id="1">
+                <h3>UI/UX with Figma</h3>
+                <a href="https://pwskills.com/masterclass/uiux-with-figma-a-beginners-guide-to-modern-design/" target="_blank"><p>Join a 2-hour Figma masterclass with Saurabh Saini! Learn Figma basics and work on a hands-on project to kickstart your UI/UX journey!</p></a>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="ai" data-resource-id="1">
+                <h3>Best AI Tools for Productivity</h3>
+                <p>Explore top AI-powered tools to boost efficiency.</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+    
+            <div class="resource-card" data-category="web-dev" data-resource-id="2">
+                <h3>HTML & CSS Crash Course</h3>
+                <p>A complete beginner-friendly tutorial for web development.</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="ai" data-resource-id="3">
+                <h3>Cursor AI Code Editor</h3>
+                <p>A powerful AI-assisted code editor alternative to VS Code with built-in pair programming capabilities.</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="4">
+                <h3>Introduction to Ethical Hacking</h3>
+                <p>Learn the basics of ethical hacking and cybersecurity.</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="cloud" data-resource-id="5">
+                <h3>Getting Started with AWS</h3>
+                <p>Learn the basics of Amazon Web Services (AWS).</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="blockchain" data-resource-id="6">
+                <h3>Blockchain Basics</h3>
+                <p>Learn the basics of blockchain technology.</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="web-dev" data-resource-id="7">
+                <h3>HTML & CSS Crash Course</h3>
+                <p>A complete beginner-friendly tutorial for web development.</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+
+            <div class="resource-card" data-category="web-dev" data-resource-id="9">
+                <h3>Frontend Development Roadmap 2024</h3>
+                <p>A comprehensive guide and learning path to becoming a frontend developer</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="web-dev" data-resource-id="10">
+                <h3>Backend Development Roadmap 2024</h3>
+                <p>A comprehensive guide to becoming a backend developer - covering popular frameworks.</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="web-dev" data-resource-id="11">
+                <h3>Full-Stack Development Roadmap 2024</h3>
+                <p>A complete guide to becoming a full-stack developer for modern web development.</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="web-dev" data-resource-id="12">
+                <h3>Best YouTube Channels for Learning to Code</h3>
+                <p>A curated list of top YouTube channels for beginners</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+            <div class="resource-card" data-category="cybersecurity" data-resource-id="13">
+                <h3>Cybersecurity Roadmap for Beginners 2024</h3>
+                <p>A beginner-friendly guide to cybersecurity fundamentals</p>
+                <div class="resource-actions">
+                    <button class="upvote">👍 <span>0</span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button id="prevPage" disabled>⬅️ Previous</button>
+            <span id="pageNumbers"></span>
+            <button id="nextPage">Next ➡️</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Challenges</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Join Us</a></li>
+                </ul>
+            </div>
+      
+            <div class="footer-section">
+                <h3>Stay Connected</h3>
+                <ul>
+                    <li><a href="mailto:support@yourwebsite.com">📩 Email</a></li>
+                    <li><a href="#">🐦 Twitter/X</a></li>
+                    <li><a href="#">📷 Instagram</a></li>
+                    <li><a href="#">💼 LinkedIn</a></li>
+                    <li><a href="#">🖥️ GitHub</a></li>
+                </ul>
+            </div>
+      
+            <div class="footer-section">
+                <h3>Legal & Privacy</h3>
+                <ul>
+                    <li><a href="#">📃 Terms & Conditions</a></li>
+                    <li><a href="#">🔒 Privacy Policy</a></li>
+                    <li><a href="#">📞 Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+      
+        <div class="footer-bottom">
+            <h3 class="text-xl"><b>Aaditya</b> Sanjay Pawar</h3>
+            <h3 id="current-time"></h3>
+        </div>
+    </footer>
+    
+    <script src="script.js" defer></script>
+    <script src="resource.js" defer></script>
+    <!-- <script src="search.js" defer></script> -->
+    </body>
+</html>
